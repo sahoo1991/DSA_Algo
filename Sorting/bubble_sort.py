@@ -1,4 +1,5 @@
 def bubble_sort(ls):
+    # flag can be added to optimize this.
     if len(ls) <= 1:
         return
     for i in range(len(ls) - 1):
