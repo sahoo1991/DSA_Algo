@@ -7,6 +7,7 @@ def quick_sort_pythonic_way(ls):
     right_arr = [el for el in ls if el > pivot]
     return quick_sort_pythonic_way(left_arr) + [pivot] + quick_sort_pythonic_way(right_arr)
 
+
 def get_pivot_index_lomuto(ls, low, high):
     # using Lomuto Partition Scheme
     pivot = ls[high]
@@ -14,15 +15,16 @@ def get_pivot_index_lomuto(ls, low, high):
     for j in range(low, high):
         if ls[j] <= pivot:
             i += 1
-            ls[i], ls[j] = ls[j] , ls[i]
-    ls[i+1], ls[high] = ls[high], ls[i+1]
+            ls[i], ls[j] = ls[j], ls[i]
+    ls[i + 1], ls[high] = ls[high], ls[i + 1]
     return i + 1
+
 
 def get_pivot_index_raw(ls, low, high):
     pivot = ls[high]
     i, j = low, high
     while i < j:
-        while ls[i] <= pivot and i <= high-1:
+        while ls[i] <= pivot and i <= high - 1:
             i += 1
         while ls[j] >= pivot and j >= low + 1:
             j -= 1
@@ -37,6 +39,7 @@ def quick_sort_in_place(ls, low, high):
         pivot_index = get_pivot_index_raw(ls, low, high)
         quick_sort_in_place(ls, low, pivot_index - 1)
         quick_sort_in_place(ls, pivot_index + 1, high)
+
 
 ls = [10, 5, 3, 25, 19, 11]
 print(quick_sort_pythonic_way(ls))
