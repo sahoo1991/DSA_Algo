@@ -21,7 +21,7 @@ def longest_subarray_with_sum_optimized(nums, k):
         prefix_sum += nums[i]
 
         if prefix_sum - k in sum_indices:
-            max_len = max(max_len, i - sum_indices[prefix_sum - k])
+            max_len = max(max_len, i - sum_indices[prefix_sum - k])a
 
         if prefix_sum not in sum_indices:
             sum_indices[prefix_sum] = i
