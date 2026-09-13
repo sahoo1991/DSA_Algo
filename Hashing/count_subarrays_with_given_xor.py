@@ -21,7 +21,7 @@ def count_subarrays_with_given_xor_brute(nums, k):
             if current_xor == k:
                 count += 1
 
-    return countm m
+    return count
 
 def count_subarrays_with_given_xor_optimized(nums, k):
     count = 0
