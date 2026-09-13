@@ -33,3 +33,6 @@ def merge_sort(ls):
 ls = [7, 4, 1, 5, 3]
 print(merge_sort(ls))
 print(ls)
+
+# TC - O(n log n)
+# SC - O(n)
