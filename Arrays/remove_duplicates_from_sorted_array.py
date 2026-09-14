@@ -10,9 +10,13 @@ def remove_duplicates(nums):
         if num not in result:
             result.append(num)
     return result
+# TC = O(n^2)
+# SC = O(n)
 
 
 def remove_duplicates_in_space(nums):
+    # TC = O(n)
+    # SC = O(1)
     start = 0
     count = 0
     for j in range(1, len(nums)):

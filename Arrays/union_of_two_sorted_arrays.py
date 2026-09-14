@@ -31,6 +31,8 @@ def union_brute_force(nums1, nums2):
         j += 1
     return result
 
+# TC = O(m+n)
+# SC = O(m+n)
 
 
 

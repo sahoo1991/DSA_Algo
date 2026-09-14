@@ -1,14 +1,11 @@
-
-
-
-
-
 # Input: nums = [0, 1, 4, 0, 5, 2]
 #
 # Output: [1, 4, 5, 2, 0, 0]
 
 def move_zeroes_inplace(nums):
     start = 0
+# TC - O(n)
+# SC - O(1) - no extra space is used
     for i in range(len(nums)):
         if nums[i] == 0:
             start = i
@@ -29,6 +26,9 @@ def move_zeroes(nums):
             count.append(0)
     result.extend(count)
     return result
+
+# TC - O(n)
+# SC - O(n) - where n is the number of elements in the array
 
 
 nums = [0, 1, 4, 0, 5, 2]

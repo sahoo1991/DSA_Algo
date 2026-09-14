@@ -17,7 +17,8 @@ def find_missing_number_optimized(nums):
     actual_sum = sum(nums)
     return expected_sum - actual_sum
 
-
+# TC - O(n) - where n is the number of elements in the array
+# SC - O(1) - no extra space is used
 
 def find_missing_number(nums):
     l = len(nums)
@@ -31,6 +32,9 @@ def find_missing_number(nums):
         if nums[i] != start:
             return i
         start += 1
+
+    # TC - O(n log n) - due to sorting
+    # SC - O(1) - no extra space is used
 
 
 nums = [0, 2, 3, 1, 4]

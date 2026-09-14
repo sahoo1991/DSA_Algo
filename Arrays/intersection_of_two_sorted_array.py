@@ -19,6 +19,8 @@ def intersect(nums1, nums2):
             continue
     return result
 
+# TC = O(m+n)
+# SC = O(min(m,n))
 
 # nums1 = [1, 2, 2, 3, 5]
 # nums2 = [1, 2, 7]

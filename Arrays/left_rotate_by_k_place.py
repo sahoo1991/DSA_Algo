@@ -28,6 +28,9 @@ def left_rotate_by_k(nums, k):
         nums[j] = temp[start]
         start += 1
 
+# TC - O(n) - where n is the number of elements in the array
+# SC - O(k) - where k is the number of elements to be rotated
+
 def left_rotate_by_k_optimized(nums, k):
     if k > len(nums):
         k = len(nums) % k
@@ -36,7 +39,8 @@ def left_rotate_by_k_optimized(nums, k):
     reverse(nums, 0, len(nums)-1)
 
 
-
+# TC - O(n) - where n is the number of elements in the array
+# SC - O(1) - no extra space is used
 
 nums = [1, 2, 3, 4, 5, 6]
 left_rotate_by_k_optimized(nums, 2)

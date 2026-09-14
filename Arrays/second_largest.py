@@ -16,3 +16,6 @@ def second_large(ls):
 
 ls =   [7, 7, 2, 2, 10, 10, 10]
 print(second_large(ls))
+
+# TC - O(n) - The function iterates through the list once, where n is the number of elements in the list.
+# SC - O(1) - The function uses a constant amount of space regardless of the

@@ -16,3 +16,6 @@ def left_rotate_by_one(nums):
 nums = [7, 6, 5, 4]
 left_rotate_by_one(nums)
 print(nums)
+
+# TC - O(n) - where n is the number of elements in the array
+# SC - O(1) - no extra space is used

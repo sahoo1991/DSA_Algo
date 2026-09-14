@@ -10,3 +10,6 @@ def linear_search(array, value):
 
 ls = [7, 4, 1, 5, 3]
 print(linear_search(ls, 10))
+
+# SC - O(1)
+# TC - O(n)
