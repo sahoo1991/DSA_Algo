@@ -3,13 +3,15 @@
 # Output: [5, 3, 2]
 
 def leaders_in_array(ls):
+    # TC = O(n)
+    # SC = O(n)
     result = []
     current_leader = ls[-1]
     result.append(ls[-1])
-    for i in range(len(nums) -2, -1, -1):
-        if nums[i] > current_leader:
-            result.append(nums[i])
-            current_leader = nums[i]
+    for i in range(len(ls) -2, -1, -1):
+        if ls[i] > current_leader:
+            result.append(ls[i])
+            current_leader = ls[i]
     return result[::-1] if len(result) > 0 else None
 
 

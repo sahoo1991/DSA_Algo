@@ -3,6 +3,8 @@
 # Output: 7
 
 def majority_element_boyer_moore_voting(nums):
+    # TC = O(n)
+    # SC = O(1)
     cur_elem = ""
     count = 0
     for num in nums:
@@ -15,7 +17,11 @@ def majority_element_boyer_moore_voting(nums):
             count -= 1
     return cur_elem if nums.count(cur_elem) > len(nums)//2 else None
 
+
+
 def majority_element_brute_1(nums):
+    # TC = O(n)
+    # SC = O(n)
     result = {}
     for num in nums:
         result[num] = result.get(num, 0) + 1
@@ -26,13 +32,15 @@ def majority_element_brute_1(nums):
 
 
 def majority_element_brute(nums):
+    # TC = O(n^2)
+    # SC = O(1)
     ans = ''
     for i in range(len(nums)):
         count = 0
         for j in range(len(nums)):
             if i != j and nums[i] == nums[j]:
                 count += 1
-                if count > len(ans)// 2:
+                if count > len(nums)// 2:
                     return nums[i]
     return None
 
