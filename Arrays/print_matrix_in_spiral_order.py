@@ -5,6 +5,8 @@ def get_spiral_matrix(ls):
     result = []
     top, left = 0, 0
     bottom, right = len(ls) -1, len(ls[0]) -1
+    # TC = O(m * n)
+    # SC = O(m * n)
     while top <= bottom and left <= right:
         for i in range(left, right +1):
             result.append(ls[top][i])

@@ -3,6 +3,8 @@
 # Output : [2, -1, 4, -3, 5, -4]
 
 def rearrange_by_sign(nums):
+    # TC = O(n)
+    # SC = O(n)
     result = [0] * len(nums)
     pos_sign = 0
     neg_sign = 1
